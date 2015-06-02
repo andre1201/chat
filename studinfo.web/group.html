@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Группы</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<div id="left-nav">
+		<a href="index.html">Добавить студента</a>
+		<a href="group.html">Добавить группу</a>
+		<a href="teacher.html">Добавить учителя</a>
+		<a href="vedomost.html">Сводная ведомость</a>
+		</div>
+<div id = "wrapper">
+	<form action="/studinfo.web/GroupServlet" method="POST">
+		<input type="hidden" name="method" value="saveGroup" />
+		<div>Номер курса:<br><input type="text" name="groupLevel" /></div>
+		<div>Название группы:<br><input type="text" name="groupName" /></div>
+		<input type="submit" value="Создать" />
+	</form>
+	<iframe src="/studinfo.web/GroupServlet?method=getAllGroup"
+	width="640" height="480"></iframe>
+	
+		</div>
+
+</body>
+</html>
