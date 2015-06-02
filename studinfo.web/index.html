@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Servlet Test</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="left-nav">
+		<a href="index.html">Добавить студента</a>
+		<a href="group.html">Добавить группу</a>
+		<a href="teacher.html">Добавить учителя</a>
+		<a href="vedomost.html">Сводная ведомость</a>
+		</div>
+<div id = "wrapper">
+
+	<form action="/studinfo.web/StudentGroupServlet" method="POST">
+		<input type="hidden" name="method" value="saveStudent" />
+		<input type="hidden" name="groupId" value="1" />
+		<div>Имя:<br><input type="text" name="firstName" /></div>
+		<div>Отчество:<br><input type="text" name="middleName" /></div>
+		<div>Фамилия:<br><input type="text" name="lastName" /></div>	
+		<div>Дата рождения:<br><input type="text" name="dateOfBirth" value="1990-12-31" />
+		</div>
+		<div>Группа:<br><input type="text" name="GroupId"  /></div>
+		<input type="submit" value="Создать" />
+	</form>
+	<iframe src="/studinfo.web/StudentGroupServlet?method=getAllStudents"
+		width="900" height="480"></iframe>
+</div>
+</body>
+</html>

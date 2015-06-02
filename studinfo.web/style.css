@@ -1,0 +1,30 @@
+#wrapper{
+	margin: 0 auto;
+	width: 900px;
+}
+form input{
+	height: 30px;
+	font-size: 22px;
+}
+table tr td{
+	width: 250px;
+	height: 30px;
+}
+/*НАЧАЛО Меню*/
+#left-nav{
+	margin-left: 10px;
+	padding-top: 15px;
+	width: 190px;
+	float: left;
+	}
+#left-nav a{
+	display: block;
+	padding:10px;
+	background: #ccc;
+	border-bottom: black solid 2px;
+	border-left: black solid 2px;
+}
+#left-nav a:first-child{
+	border-top: black solid 2px;
+}
+/* КОНЕЦ Меню*/

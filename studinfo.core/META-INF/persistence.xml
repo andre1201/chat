@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence">
+	<persistence-unit name="studinfo">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<jta-data-source>jdbc/pgsql</jta-data-source>
+		<properties>
+			<property name="eclipselink.ddl-generation" value="create-or-extend-tables" />
+			<property name="eclipselink.cache.shared.default" value="false" />
+		</properties>
+		<class>studinfo.core.entity.Student</class>
+		<class>studinfo.core.entity.Group</class>
+		<class>studinfo.core.entity.Teacher</class>
+		<class>studinfo.core.entity.Subject</class>
+		<class>studinfo.core.entity.Period</class>
+		<class>studinfo.core.entity.Grade</class>
+	</persistence-unit>
+</persistence>

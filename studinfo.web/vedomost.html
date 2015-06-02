@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Сводная ведомость</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<div id="left-nav">
+		<a href="index.html">Добавить студента</a>
+		<a href="group.html">Добавить группу</a>
+		<a href="teacher.html">Добавить учителя</a>
+		<a href="vedomost.html">Сводная ведомость</a>
+		</div>
+<div id = "wrapper">
+	<form action="/studinfo.web/GroupServlet" method="POST">
+		<input type="hidden" name="method" value="saveGroup" />
+		<div>Название группы<br><input type="text" name="groupLevel" /></div>
+		<input type="submit" value="Создать" />
+	</form>
+	<iframe src="/studinfo.web/VedomostServlet?method=getAllGroupStud"
+	width="640" height="600"></iframe>
+	
+</div>
+
+</body>
+</html>
